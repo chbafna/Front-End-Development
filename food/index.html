@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now....</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">foodbloger</a>
+            </header>
+            <h1>
+                <span>The    Healthy</span> Eating Experience
+            </h1>
+            <p>
+                I am Here to make you and your tummy yummy.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nemo? Facilis, ut provident natus porro mollitia tempore accusantium earum fuga!
+
+            </p>
+            <div class="form-details">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city"> Enter Your city :</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "Tamil Nadu"</p>
+                    </div>
+                    <input type="button" value="Find Food" id="findfood">
+                </form>
+            </div>
+        </section>
+    </div>
+    <section class="authenticate">
+        <div class="right-col">
+            <h2>AUTHENTIC. AWESOME.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore placeat. Labore iusto suscipit itaque cum facere at adipisci facilis.
+            </p>
+        </div>
+        <img src="image/food.jpg" alt="picture of food ">
+    </section>
+
+
+<script>
+    let btn= document.getElementById('findfood');
+    let overlay= document.getElementById('overlay');
+
+    btn.addEventListener('click', () => {
+        overlay.style.display='grid';
+        overlay.classList.add('animate-overlay');
+        
+    })
+</script>
+
+
+
+
+</body>
+
+
+</html>
